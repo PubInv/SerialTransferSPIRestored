@@ -1,3 +1,23 @@
+# TEMPORARY FORK OF POWERBROKER2's SERIALTRANSFER
+
+USE THIS REPO WITH CAUTION!
+
+This is a temporary fork of @PowerBroker2 's very nice SerialTransfer library. It pains me to fork it, but that project has decided not to support SPI, and the [General Purpose Alarm Device (GPAD)](https://github.com/PubInv/general-alarm-device) really needs SPI data transfer.
+
+I considered creating a small SPI libary to do what we need, but @PowerBroker2's code is just too nice; I would end up duplicating a lot of the packet construction work that they have created.
+
+I hope to keep this repo in shape to be reintegrated into that project as needed. I understand some of the things that neeed to be done to do that, but perhaps not all of them---entropy and bit rot are powerful forces.
+
+# Changes From The Original
+
+1. The SPI files are uncommented (they were commented out by the original author when they stopped supporting SPI)
+1. I removed a "volatile" keyword which was preventing compilation. I think I understand the meaning of "volatile" and believe it was not needed in this case; but concurrency is complicated and I could be wrong.
+
+
+
+# Begin Original Text
+
+
 <p align="center">
   <img width="475" height="184" src="https://raw.githubusercontent.com/PowerBroker2/SerialTransfer/master/logo.png">
 </p>
