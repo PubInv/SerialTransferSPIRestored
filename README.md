@@ -4,7 +4,7 @@ USE THIS REPO WITH CAUTION!
 
 This is a temporary fork of @PowerBroker2 's very nice SerialTransfer library. It pains me to fork it, but that project has decided not to support SPI, and the [General Purpose Alarm Device (GPAD)](https://github.com/PubInv/general-alarm-device) really needs SPI data transfer.
 
-I considered creating a small SPI libary to do what we need, but @PowerBroker2's code is just too nice; I would end up duplicating a lot of the packet construction work that they have created.
+I considered creating a small SPI library to do what we need, but @PowerBroker2's code is just too nice; I would end up duplicating a lot of the packet construction work that they have created.
 
 I hope to keep this repo in shape to be reintegrated into that project as needed. I understand some of the things that neeed to be done to do that, but perhaps not all of them---entropy and bit rot are powerful forces.
 
